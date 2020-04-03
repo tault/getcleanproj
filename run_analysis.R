@@ -40,7 +40,6 @@ submerged<-merged[c(1,2,indices)]
 submerged$activity<-gsub("1","walkflat",submerged$activity)
 submerged$activity<-gsub("2","walkup",submerged$activity)
 submerged$activity<-gsub("3","walkdown",submerged$activity)
-submerged$activity<-gsub("2","walkup",submerged$activity)
 submerged$activity<-gsub("4","sit",submerged$activity)
 submerged$activity<-gsub("5","stand",submerged$activity)
 submerged$activity<-gsub("6","lay",submerged$activity)
