@@ -7,7 +7,7 @@
 ##fileURL<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 ##download.file(fileURL,"./data/zippety.zip")
 ##unzip("./data/zippety.zip",exdir="./data")
-#file.rename("./data/UCI HAR Dataset","./data/uci")
+##file.rename("./data/UCI HAR Dataset","./data/uci")
 ##setwd("./data/uci")
 ##file.copy("./test/X_test.txt","./X_test.txt")
 ##file.copy("./test/subject_test.txt","./subject_test.txt")
