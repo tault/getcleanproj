@@ -12,92 +12,92 @@ Detailed line-by-line analysis of this project's main script, run_analysis.R, ca
 # Variables created by run_analysis.R
 
 ### ftable
-* Created: Line 12
+* Created: Line 18
 * Class: data.frame
 * Dimensions: 561x2
 * Description: "raw" read of features.txt using read.table
 
 ### features
-* Created: Line 13
+* Created: Line 19
 * Class: character
 * Dimensions: 561x1 (vector)
 * Description: Column 2 of ftable, as a character vector
 
 ### cfeatures
-* Created: Line 15
+* Created: Line 21
 * Class: character
 * Dimensions: 561x1 (vector)
 * Description: reformatted version of features
 
 ### xtest
-* Created: Line 16
-* Modified: Lines 19, 22, 24
+* Created: Line 22
+* Modified: Lines 25, 28, 30
 * Class: data.frame
 * Dimensions: 2947x563 (eventually)
 * Description: read-in of X_test.txt, with two add'l columns added for subjectid and activity
 
 ### subtest
-* Created: Line 17
-* Modified: Line 18
+* Created: Line 23
+* Modified: Line 24
 * Class: numeric (eventually)
 * Dimensions: 2947x1 (vector)
 * Description: read-in of subject_test.txt, reformatted as numeric
 
 ### ytest
-* Created: Line 20
-* Modified: Line 21
+* Created: Line 26
+* Modified: Line 27
 * Class: numeric (eventually)
 * Dimensions: 2947x1 (vector)
 * Description: read-in of y_test.txt, reformatted as numeric
 
 ### xtrain
-* Created: Line 26
-* Modified: Lines 29, 32, 33
+* Created: Line 32
+* Modified: Lines 35, 38, 39
 * Class: data.frame
 * Dimensions: 7352x563 (eventually)
 * Description: read-in of X_train.txt, with two add'l columns added for subjectid and activity
 
 ### subtrain
-* Created: Line 27
-* Modified: Line 28
+* Created: Line 33
+* Modified: Line 34
 * Class: numeric (eventually)
 * Dimensions: 7352x1 (vector)
 * Description: read-in of subject_train.txt, reformatted as numeric
 
 ### ytrain
-* Created: Line 30
-* Modified: Line 31
+* Created: Line 36
+* Modified: Line 37
 * Class: numeric (eventually)
 * Dimensions: 7352x1 (vector)
 * Description: read-in of y_train.txt, reformatted as numeric
 
 ### merged
-* Created: Line 34
+* Created: Line 40
 * Class: data.frame
 * Dimensions: 10299x563
 * Description: merge of xtest and xtrain across all columns
 
 ### indices
-* Created: Line 37
+* Created: Line 43
 * Class: integer
 * Dimensions: 66x1 (vector)
 * Description: indices corresponding to columns of merged that we want to keep in next subset
 
 ### submerged
-* Created: Line 39
-* Modified: Lines 41, 42, 43, 44, 45, 46
+* Created: Line 45
+* Modified: Lines 47, 48, 49, 50, 51, 52
 * Class: data.frame
 * Dimensions: 10299x68
 * Description: columns of merged with mean and std parameters, plus subjectid and activity
 
 ### groupmerge
-* Created: Line 51
+* Created: Line 57
 * Class: grouped_df tbl_df tbl data.frame
 * Dimensions: 10299x68
 * Description: grouped version of submerge to allow subsequent summarize_at function
 
 ### tidy
-* Created: Line 52
+* Created: Line 58
 * Class: grouped_df tbl_df tbl data.frame
 * Dimensions: 180x68
 * Description: final tidy dataset, which can be viewed or exported as desired
