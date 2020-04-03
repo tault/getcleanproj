@@ -52,7 +52,7 @@ submerged$activity<-gsub("5","stand",submerged$activity)
 submerged$activity<-gsub("6","lay",submerged$activity)
 ## At this point, submerged is the "full" table corresponding to the end of project step 4
 ## If you prefer to have this data instead of the tidy data, use the following code:
-##write.table(submerged,"./data/full.txt",row.names=FALSE)
+##write.table(submerged,".full.txt",row.names=FALSE)
 library(dplyr)
 groupmerge<-group_by(submerged,subjectid,activity)
 tidy<-summarize_at(groupmerge,vars(tbodyaccmeanx:fbodybodygyrojerkmagstd),mean)
