@@ -33,6 +33,7 @@ xtrain$activity<-ytrain
 xtrain<-xtrain[c(562,563,1:561)]
 merged<-merge(xtest,xtrain,all=TRUE)
 ## Deliberately take mean and std columns, but exclude those weird angle ones at the end (course mentor advised not to include those)
+## See https://www.coursera.org/learn/data-cleaning/discussions/weeks/4/threads/3GNU_99ZEeedGhKBhw5mhg
 indices<-intersect(grep("mean$|meanx$|meany$|meanz$|std$|stdx$|stdy$|stdz$",colnames(merged)),grep("^angle",colnames(merged),invert=TRUE))
 ##Keep the subjectid and activity columns, along with the 66 mean & std columns of interest
 submerged<-merged[c(1,2,indices)]
